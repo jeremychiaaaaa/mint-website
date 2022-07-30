@@ -2,20 +2,31 @@
   "name": "mint-website",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:8000",
   "dependencies": {
+    "@chakra-ui/react": "^1.8.7",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
     "@testing-library/jest-dom": "^5.16.3",
     "@testing-library/react": "^12.1.4",
     "@testing-library/user-event": "^13.5.0",
+    "buffer": "^6.0.3",
+    "framer-motion": "^6.2.8",
+    "keccak256": "^1.0.6",
+    "merkletreejs": "^0.2.31",
+    "process": "^0.11.10",
     "react": "^18.0.0",
+    "react-app-rewired": "^2.2.1",
     "react-dom": "^18.0.0",
     "react-scripts": "5.0.0",
+    "stream-browserify": "^3.0.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-app-rewired eject"
   },
   "eslintConfig": {
     "extends": [
@@ -34,5 +45,25 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.5",
+    "@nomiclabs/hardhat-etherscan": "^3.0.3",
+    "@nomiclabs/hardhat-waffle": "^2.0.3",
+    "@openzeppelin/contracts": "^4.5.0",
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.0",
+    "erc721a": "^3.1.0",
+    "ethereum-waffle": "^3.4.4",
+    "ethers": "^5.6.2",
+    "flow-babel-webpack-plugin": "^1.1.1",
+    "hardhat": "^2.9.2"
+  },
+  "description": "This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, a sample script that deploys that contract, and an example of a task implementation, which simply lists the available accounts.",
+  "main": "hardhat.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC"
 }
