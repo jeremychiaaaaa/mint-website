@@ -95,7 +95,7 @@ const MainMint = ({accounts,setAccounts}) => {
         <Flex justify="center" height="100vh" align="center" paddingBottom="250px">
             <Box width="520px">
             <Text fontSize="48px" boxShadow= "0 5px #000000">AudeaumusNFT</Text>
-            <p>Mint now to suck JORDAN RAYMAN THOMAS OFF</p>
+            <p>Mint now to not miss out !</p>
             {isConnected? (
                 <div>
                     <div>
